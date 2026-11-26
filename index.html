@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Controle de viaturas</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header><div class="wrap">
+  <button id="tema" type="button">Tema</button>
+  <h1>Controle de viaturas</h1>
+  <p id="resumo"></p>
+</div></header>
+<main><div class="wrap"><div class="list" id="lista"></div></div></main>
+
+<dialog id="dlg">
+  <form method="dialog" id="form">
+    <h2 id="dlgTitulo"></h2>
+    <label>Unidade<input id="un" required></label>
+    <label>Responsável<input id="rs" required></label>
+    <label>Destino<input id="ds" required></label>
+    <div class="row">
+      <button class="btn sec" type="button" id="cancela">Cancelar</button>
+      <button class="btn" type="submit">Alocar</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
